@@ -31,7 +31,7 @@ function App() {
 
  
   return (
-  <BrowserRouter basename='/myStore'>
+  <HashRouter basename='/myStore'>
       <Navbar />
 
 
@@ -50,7 +50,7 @@ function App() {
 
       </Routes>
     </MainCont>
-  </BrowserRouter>
+  </HashRouter>
     )
 }
 
