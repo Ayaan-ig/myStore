@@ -30,13 +30,12 @@ function App() {
   
 
  
-  return (
-  <HashRouter basename='/myStore'>
-      <Navbar />
+  return (<>
+    <Navbar />
 
 
     <MainCont>
-      <Routes>
+      <HashRouter basename='/myStore'>
         <Route path='/' element={<HomePage />} />
         <Route path = '/category/:thisCategory' element = {<CategoryPage />} />
         <Route path = '/products/:productId' element = {<ProductDetails />} />
@@ -48,9 +47,9 @@ function App() {
  
       
 
-      </Routes>
-    </MainCont>
   </HashRouter>
+    </MainCont>
+  </>
     )
 }
 
