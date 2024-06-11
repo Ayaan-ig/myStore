@@ -1,7 +1,7 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-const cartAPIurl = 'http://localhost:3000/api/v1/cart';
+const cartAPIurl = 'https://test-vercel-two-sage.vercel.app/api/v1/cart';
 
 export const getCartItems = createAsyncThunk('cart/getAllItems',async (token)=>{
     try {

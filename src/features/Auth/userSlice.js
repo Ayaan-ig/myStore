@@ -1,8 +1,8 @@
 import { createSlice,createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 import { changeErrMessage } from "./AuthFormCredentials";
-const loginURL = 'http://localhost:3000/api/v1/auth/login'
-const registerURL = 'http://localhost:3000/api/v1/auth/register'
+const loginURL = 'https://test-vercel-two-sage.vercel.app/api/v1/auth/login'
+const registerURL = 'https://test-vercel-two-sage.vercel.app/api/v1/auth/register'
 
 export const login = createAsyncThunk('auth/login',async (userData,thunkAPI)=>{
     try {
